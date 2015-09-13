@@ -20,6 +20,10 @@ class Blink1controlTool < Formula
           system "make"
           system "make install"
         end
+        system "git clone git@github.com:udp/json-parser.git"
+        cd "json-parser" do
+          system "git checkout v1.1.0"
+        end
         system "make"
         bin.install "blink1control-tool"
       end
