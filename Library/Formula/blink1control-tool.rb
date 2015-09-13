@@ -7,7 +7,7 @@ class Blink1controlTool < Formula
 
   bottle do
     cellar :any
-    sha256 "354dfc245bab10e35bc8c62e8d44fe883b7b8dff43c7962655b88571f044f448" => :mavericks
+    sha256 "5e22891add69771089048f69fa5f7403e0c406c59a2eff232c63c19fe9b292d7" => :mavericks
   end
 
   def install
