@@ -13,7 +13,7 @@ class Blink1controlTool < Formula
   def install
     cd "commandline" do
       cd "blink1control-tool" do
-        system "wget http://curl.haxx.se/download/curl-7.37.1.tar.gz"
+        system "wget http://curl.haxx.se/download/curl-7.37.1.tar.gz ; echo $?"
         system "tar xvzf curl-7.37.1.tar.gz"
         cd "curl-7.37.1" do
           system "./configure --prefix `pwd`/../curl-mac --disable-shared --disable-ldap --without-zlib --without-libssh2 --without-ssl --disable-crypto-auth"
